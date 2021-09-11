@@ -216,13 +216,13 @@ function generateDateFormats(date){
         const [ctr2, prevDate] = getPreviousPalindromeDate(date);
   
         if (ctr1 > ctr2) {
-    output.innerText = `The nearest palindrome date is ${prevDate.day}-${prevDate.month}-${prevDate.year}, you missed by ${ctr2} days.`;
+    output.innerText = `The nearest palindrome date is ${prevDate.day}-${prevDate.month}-${prevDate.year}, you missed by ${ctr2} days.🙁`;
         } else {
-          output.innerText = `The nearest palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you missed by ${ctr1} days.`;
+          output.innerText = `The nearest palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you missed by ${ctr1} days.🙁`;
         }
   
       } else {
-        output.innerText = 'Yay! Your birthday is palindrome!';
+        output.innerText = 'Yay! Your birthday is palindrome!🎉';
       }
     }
   }
